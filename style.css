@@ -1,0 +1,49 @@
+:root {
+  --ebardha: #f1e8e3; /* Define your custom color */
+  --ezeza: #010216;
+  --ekalterta: #3360f1;
+  --everdha: #fcff74;
+}
+
+.zi-text {
+  color: var(--ezeza); /* Use the custom color */
+}
+
+.zi-bg {
+  background-color: var(--ezeza); /* Use the custom color as background */
+}
+
+.bardh-text {
+  color: var(--ebardha); /* Use the custom color */
+}
+
+.bardh-bg {
+  background-color: var(--ebardha); /* Use the custom color as background */
+}
+
+.kaltert-text {
+  color: var(--ekalterta); /* Use the custom color */
+}
+
+.kaltert-bg {
+  background-color: var(--ekalterta); /* Use the custom color as background */
+}
+
+.verdhe-text {
+  color: var(--everdha); /* Use the custom color */
+}
+
+.verdhe-bg {
+  background-color: var(--everdha); /* Use the custom color as background */
+}
+
+
+
+/* Use the CSS variables */
+.element {
+  color: var(--main-color); /* Use the custom color */
+}
+
+.another-element {
+  background-color: var(--main-color); /* Use the custom color as background */
+}
