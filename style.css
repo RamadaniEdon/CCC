@@ -38,12 +38,26 @@
 }
 
 
-
-/* Use the CSS variables */
-.element {
-  color: var(--main-color); /* Use the custom color */
+.border-bottom-gray {
+  border-bottom: 1px solid rgb(68, 68, 68);
 }
 
-.another-element {
-  background-color: var(--main-color); /* Use the custom color as background */
+.border-top-gray {
+  border-top: 1px solid rgb(68, 68, 68);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
+.footer {
+  width: 100%;
 }
