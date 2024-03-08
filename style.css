@@ -61,3 +61,32 @@ body {
 .footer {
   width: 100%;
 }
+
+
+.navbar-brand {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar-nav {
+  height: 60px;
+  display: flex;
+  align-items: center; /* Aligns the nav items vertically in the center */
+}
+
+/* Ensure nav-items are aligned on the edges */
+.navbar-nav:first-child {
+  margin-right: auto;
+}
+
+.navbar-nav:last-child {
+  margin-left: auto;
+}
+
+.nav-items:not(:last-child) {
+  margin-right: 100px; /* Adjust spacing between nav items */
+}
