@@ -90,3 +90,23 @@ body {
 .nav-items:not(:last-child) {
   margin-right: 100px; /* Adjust spacing between nav items */
 }
+
+.nav-link{
+  font-size: larger;
+}
+
+.nav-link>img{
+  height: 100px;
+}
+
+.navbar-toggler {
+  /* Ensure the border is visible or remove if not needed */
+  border-color: rgba(211, 0, 0, 0.7);
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+/* If the background of your navbar is light, you can use black as above (stroke='%23000'). 
+   If the background is dark, use white or a lighter color (stroke='%23FFF'). */
