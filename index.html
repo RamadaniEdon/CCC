@@ -16,6 +16,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet" />
 
   <link rel="stylesheet" href="./style.css">
+  <link rel="scss" href="./custom.scss">
 
 </head>
 
@@ -23,42 +24,49 @@
 
   <div class="content">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <div class="container-fluid position-relative"> <!-- Note the position-relative class here -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        
+    
         <!-- Navbar links -->
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
           <ul class="navbar-nav">
-            <li class="nav-item nav-items">
-              <a class="nav-link active" aria-current="page" href="#">Catalog</a>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Ballina</a>
             </li>
-            <li class="nav-item nav-items">
-              <a class="nav-link" href="#">Places</a>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/sherbimet/sherbimet.html">Sherbimet</a>
             </li>
-            <li class="nav-item nav-items">
-              <a class="nav-link" href="#">
-                <img src="./img/IMG-6cc3120f810483c22c94b400c51eb7fb-V-removebg-preview.png" alt="Logo">
-              </a>
+          </ul>
+    
+          <!-- Placeholder for center alignment, hidden logo goes here -->
+          <a href="./index.html" class="d-none d-sm-block invisible">
+            <img src="../img/IMG-6cc3120f810483c22c94b400c51eb7fb-V-removebg-preview" alt="Logo" style="height: 100px;">
+          </a>
+    
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/klientet.html">Klientet</a>
             </li>
-            <li class="nav-item nav-items">
-              <a class="nav-link" href="#">Blogs</a>
-            </li>
-            <li class="nav-item nav-items">
-              <a class="nav-link" href="#">Contact</a>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/rreth-nesh.html">Rreth Nesh</a>
             </li>
           </ul>
         </div>
-        <a class="nav-link" href="#">EN</a>
+    
+        <!-- Actual logo, absolutely positioned to be in the center -->
+        <a class="navbar-brand position-absolute" href="./index.html" style="left: 50%; transform: translateX(-50%);">
+          <img src="./img/IMG-6cc3120f810483c22c94b400c51eb7fb-V-removebg-preview.png" alt="Logo" style="height: 100px;">
+        </a>
       </div>
     </nav>
+    
 
     <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel"
       data-mdb-carousel-init="" data-mdb-carousel-initialized="true">
-      <!-- Indicators -->
+      
       <div class="carousel-indicators">
         <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="0" class=""
           aria-label="Slide 1"></button>
@@ -68,9 +76,7 @@
           class="active" aria-current="true"></button>
       </div>
 
-      <!-- Inner -->
       <div class="carousel-inner">
-        <!-- Single item -->
         <div class="carousel-item">
           <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(15).webp" class="d-block w-100"
             alt="Sunset Over the City">
@@ -80,7 +86,6 @@
           </div>
         </div>
 
-        <!-- Single item -->
         <div class="carousel-item">
           <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(22).webp" class="d-block w-100"
             alt="Canyon at Nigh">
@@ -90,7 +95,6 @@
           </div>
         </div>
 
-        <!-- Single item -->
         <div class="carousel-item active">
           <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(23).webp" class="d-block w-100"
             alt="Cliff Above a Stormy Sea">
@@ -100,9 +104,7 @@
           </div>
         </div>
       </div>
-      <!-- Inner -->
 
-      <!-- Controls -->
       <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
