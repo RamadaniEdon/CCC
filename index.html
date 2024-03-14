@@ -14,6 +14,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
   <!-- MDB -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 
   <link rel="stylesheet" href="./style.css">
 
@@ -112,6 +113,55 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6 order-md-1">
+          <!-- Loan Calculator Form -->
+          <form id="loan-form">
+            <div class="form-group">
+              <label for="amount">Loan amount</label>
+              <input type="number" class="form-control" id="amount" placeholder="Enter amount">
+            </div>
+            <div class="form-group">
+              <label for="years">Loan term in years</label>
+              <input type="number" class="form-control" id="years" placeholder="Enter years" oninput="updateMonths()">
+            </div>
+            <div class="form-group">
+              <label for="months">Loan term in months</label>
+              <input type="number" class="form-control" id="months" placeholder="Enter months" oninput="updateYears()">
+            </div>
+            <div class="form-group">
+              <label for="rate">Interest rate per year (%)</label>
+              <input type="number" class="form-control" id="rate" step="0.1" placeholder="Enter interest rate">
+            </div>
+            <div class="form-group d-flex justify-content-center">
+              <button type="button" class="btn btn-primary" onclick="calculateLoan()">Calculate</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6 order-md-2" id="scroll-here">
+          <!-- Results -->
+          <h2>Loan Summary</h2>
+          <div id="results" class="p-3 border bg-light">
+            <ul class="list-group">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Monthly Payment:
+                <span id="monthly-payment">$0</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Total Payment:
+                <span id="total-payment">$0</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Total Interest:
+                <span id="total-interest">$0</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <footer class="footer py-3 mt-4 zi-bg bardh-text">
@@ -127,6 +177,7 @@
   </footer>
 
 
+
   <!-- Bootstrap Bundle with Popper -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -138,6 +189,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- Your Custom JS -->
+    <script src="loan-calculator.js"></script>
 </body>
 
 </html>
