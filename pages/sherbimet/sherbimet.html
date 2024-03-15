@@ -10,115 +10,74 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-  <!-- Google Fonts -->
+  
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
-  <!-- MDB -->
+
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet" />
 
   <link rel="stylesheet" href="../../style.css">
-  <link rel='stylesheet' type='text/css' href='./history.css'>
+  <!-- <link rel='stylesheet' type='text/css' href='./history.css'> -->
   <script src="https://kit.fontawesome.com/3d4aa6afaa.js" crossorigin="anonymous"></script>
   <script src="./../../scripts/sherbimet.js"></script>
 
   <style>
-    .grid-container {
-      display: grid;
-      grid-template-rows: auto auto 1px;
-      /* Three rows with the last one having a height of 1px */
-      gap: 5px;
-      /* Gap between grid items */
-      align-items: center;
-      /* Align items vertically center */
-    }
-
-    .circle {
-      width: 20px;
-      height: 20px;
-      background-color: black;
-      border-radius: 50%;
-      /* Make it a circle */
-    }
-
-    .line {
-      width: 100%;
-      /* Takes full width */
-      background-color: black;
-      grid-row: 3;
-      /* Places it in the third row */
-      position: relative;
-      /* For relative positioning */
-    }
-
-    .line::before {
-      content: "";
-      position: absolute;
-      left: 40%;
-      /* Move it to the middle horizontally */
-      top: 0;
-      height: 100%;
-      width: 1px;
-      /* Width of the line */
-      background-color: black;
-    }
   </style>
 </head>
 
 <body>
 
+  
   <div class="content">
 
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
       <div class="container-fluid">
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                
+        <div class="logo-container d-sm-none w-100 h-1 text-center">
+          <a class="" href="./index.html">
+            <img src="../../img/IMG-6cc3120f810483c22c94b400c51eb7fb-V-removebg-preview.png" alt="Logo" style="height: 60px;">
+          </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
+
         <!-- Navbar links -->
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
           <ul class="navbar-nav">
-            <li class="nav-item nav-items">
-              <a class="nav-link active" aria-current="page" href="#">Catalog</a>
+            <li class="nav-items">
+              <a class="nav-link active" aria-current="page" href="./index.html">Ballina</a>
             </li>
-            <li class="nav-item nav-items">
-              <a class="nav-link" href="#">Places</a>
+            <li class="nav-items">
+              <a class="nav-link" href="./pages/sherbimet/sherbimet.html">Sherbimet</a>
             </li>
-            <li class="nav-item nav-items">
-              <a class="nav-link" href="#">
-                <img src="../../img/IMG-6cc3120f810483c22c94b400c51eb7fb-V-removebg-preview.png" alt="Logo">
+            <li class="nav-items">
+              <a href="./index.html" class="d-none d-sm-block">
+                <img src="../../img/IMG-6cc3120f810483c22c94b400c51eb7fb-V-removebg-preview.png" alt="Logo" style="height: 80px;">
               </a>
             </li>
-            <li class="nav-item nav-items">
-              <a class="nav-link" href="#">Blogs</a>
+            <li class="nav-items ">
+              <a class="nav-link" href="./pages/klientet.html">Klientet</a>
             </li>
-            <li class="nav-item nav-items">
-              <a class="nav-link" href="#">Contact</a>
+            <li class="nav-items">
+              <a class="nav-link" href="./pages/rreth-nesh.html">Rreth Nesh</a>
             </li>
           </ul>
-        </div>  
+        </div>
       </div>
-      <a class="nav-link" href="#">EN</a>
-      <!-- <a class="hiddenImg" href="#">
-        <img src="../../img/IMG-6cc3120f810483c22c94b400c51eb7fb-V-removebg-preview.png" alt="Logo">
-      </a> -->
+              <!-- Actual logo, absolutely positioned to be in the center -->
+              
     </nav>
+  
 
-    <div class="containerFlex">
+    <!-- <div class="containerFlex">
       <div id="sherbimeContainer" class="moveLeft">
         <div id="sherbimeSideBar" class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white">
           <a href="#" class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
-            <!-- <svg class="bi me-2" width="30" height="24">
-            <use xlink:href="#bootstrap"></use>
-          </svg> -->
             <span class="fs-5 fw-semibold margin0auto">Sherbimet</span>
           </a>
           <div id="sherbimet" class="list-group list-group-flush border-bottom scrollarea">
-            <!-- <a href="#" class="list-group-item list-group-item-action active py-3 lh-tight" aria-current="true">
-          <div class="d-flex w-100 align-items-center justify-content-between">
-            <strong class="mb-1">List group item heading</strong>
-          </div>
-        </a> -->
+
             <a href="./sherbimi1.html" target="television" class="list-group-item list-group-item-action py-3 lh-tight">
               <div class="d-flex w-100 align-items-center justify-content-between">
                 <div class="mb-1 margin0auto">List group item heading</div>
@@ -153,7 +112,7 @@
               <div class="d-flex w-100 align-items-center justify-content-between">
                 <div class="mb-1 margin0auto">List group item heading</div>
               </div>
-            </a>
+            </a> -->
             <!-- <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
           <div class="d-flex w-100 align-items-center justify-content-between">
             <strong class="mb-1">List group item heading</strong>
@@ -222,13 +181,13 @@
           </div>
           <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
         </a> -->
+            <!-- </div>
+            <i id="showSideBarBtn" class="fa-solid fa-circle-arrow-right"></i>
           </div>
-          <i id="showSideBarBtn" class="fa-solid fa-circle-arrow-right"></i>
         </div>
-      </div>
-      <div id="startingInfo" class="displayBlock"></div>
-      <iframe id="television" class="television displayNone" name="television"></iframe>
-    </div>
+        <div id="startingInfo" class="displayBlock"></div>
+        <iframe id="television" class="television displayNone" name="television"></iframe>
+      </div> -->
 
 
 
@@ -307,10 +266,10 @@
 
 
   <!-- Bootstrap Bundle with Popper -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>

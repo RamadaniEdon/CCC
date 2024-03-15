@@ -72,20 +72,20 @@ body {
   width: 100%;
 }
 
-.navbar-brand {
+.logo-container {
   display: flex;
-  position: absolute;
+  justify-content: center; /* Horizontally center the logo */
+  height: 60px; /* Ensure the container fills the height of the navbar */
+}
+
+.navbar{
+  display: flex;
   align-items: center;
-  justify-content: center;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .navbar-nav {
-  height: 60px;
   display: flex;
   align-items: center;
-  /* Aligns the nav items vertically in the center */
 }
 
 .navbar-nav:first-child {
@@ -98,7 +98,6 @@ body {
 
 .nav-items:not(:last-child) {
   margin-right: 50px;
-  /* Adjust spacing between nav items */
 }
 
 .nav-link {
@@ -137,6 +136,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  .navbar .logo-container {
+    position: static;
+    height: 12.5px;
+  }
   .nav-items:not(:last-child) {
     margin-right: 10px;
   }
