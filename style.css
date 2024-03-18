@@ -288,14 +288,15 @@ nav.fill ul li a:hover:after {
 
 #startingInfo {
   margin-left: 10px;
-  width: 75%;
-
+  flex-grow: 1;
 }
 
 
 .television {
   margin-left: 10px;
-  width: 75%;
+  /* width: 75%; */
+  flex-grow: 1;
+  min-height: 60vh;
   /* height: 100px; */
   /* height: 553px; */
   background-color: var(--ekalterta);
@@ -323,6 +324,10 @@ nav.fill ul li a:hover:after {
 
 .displayNone {
   display: none;
+}
+
+.sherbime-sidebar-links {
+  text-align: center;
 }
 
 .sherbimeSideBarHidden {
@@ -355,6 +360,8 @@ nav.fill ul li a:hover:after {
 
 #sherbimeContainer {
   width: 22%;
+  max-width: 18rem;
+  min-width: 15rem;;
 }
 
 #showSideBarBtn {
@@ -384,8 +391,9 @@ nav.fill ul li a:hover:after {
   #sherbimeContainer {
     position: fixed;
     /* left: -10rem; */
-    top: 10vh;
-    height: 60vh;
+    top: 15vh;
+    height: 70vh;
+    max-height: fit-content;
     width: 15rem;
     transition: 0.5s;
   }
@@ -412,6 +420,50 @@ nav.fill ul li a:hover:after {
     margin: 0px 0px 0px 0px;
     height: 80vh;
     min-height: 30rem;
+    width: 100%;
+  }
+}
+
+.sherbim-container {
+  display: flex;
+  margin-left: 5px;
+  margin-right: 5px;
+  justify-content: space-between;
+}
+
+.text-sherbim {
+  margin: 20px;
+  width: 50%;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+}
+
+.foto-sherbim {
+  width: 50%;
+  align-self: center;
+}
+
+.title-sherbim {
+  padding-bottom: 10px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .text-sherbim {
+    margin: 15px;
+    width: fit-content;
+    text-align: justify;
+    order: 2;
+  }
+  .foto-sherbim {
+    /* margin: 5px; */
+    order: 1;
+    width: 100%;
+  }
+  .sherbim-container {
+    flex-direction: column;
   }
 }
 
