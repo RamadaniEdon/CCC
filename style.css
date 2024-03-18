@@ -309,8 +309,12 @@ nav.fill ul li a:hover:after {
 }
 
 #startingInfo {
-  margin-left: 10px;
-  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+  /* margin-left: 10px; */
+  /* min-height: 60vh; */
+
+  flex: 1;
 }
 
 
@@ -395,7 +399,9 @@ nav.fill ul li a:hover:after {
   left: -15rem;
 }
 
-
+iframe {
+  background-color: white;
+}
 
 .sherbim-container {
   display: flex;
@@ -410,6 +416,11 @@ nav.fill ul li a:hover:after {
   text-align: justify;
   display: flex;
   flex-direction: column;
+}
+
+.only-text {
+  width: 100%;
+  align-self: center;
 }
 
 .foto-sherbim {
@@ -570,3 +581,22 @@ h2 {
 .container .box .body .content div h3 {
   letter-spacing: 1px;
 }
+
+
+.text-page {
+  margin: 20px 50px;
+  padding: 10px 30px;
+  flex-grow: 1;
+  min-height: 60vh;
+  background-color: white;
+}
+
+.text-page-text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.text-page-text p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+} 
