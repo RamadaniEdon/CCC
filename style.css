@@ -90,10 +90,12 @@ body {
   color: #cccccc;
 }
 
+
 .navbar {
   display: flex;
   align-items: center;
   box-shadow: 0px 5px 0px #dedede;
+  z-index: 11;
 }
 
 .navbar-nav {
