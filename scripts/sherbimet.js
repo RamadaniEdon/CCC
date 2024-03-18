@@ -23,6 +23,8 @@ window.onload = function () {
   const sideBar = document.getElementById("sherbimeContainer");
   const sideBarButton = document.getElementById("showSideBarBtn");
   const handler2 = function(){
+    if(window.innerWidth > 576) return;
+    
     if(!visibleSideBar){
       sideBar.classList.add("moveRight");
       sideBar.classList.remove("moveLeft");
