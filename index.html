@@ -24,8 +24,18 @@
 
 <body>
 
+  <div id="logo-container">
+    <img id="main-logo" src="./img/favicon1-removebg-preview.png" alt="Full Logo">
+    <img id="c1" class="c-part" src="./img/favicon1-removebg-preview-modified.png" alt="C 1">
+    <img id="c2" class="c-part" src="./img/favicon1-removebg-preview-modified(1).png" alt="C 2">
+    <img id="c3" class="c-part" src="./img/favicon1-removebg-preview-modified(2).png" alt="C 3">
+  </div>
+
+  <diV id="main-content" style="display: none;">
+
   <div class="content">
 
+<<<<<<< Updated upstream
     <nav class="navbar navbar-expand-sm navbar-light bg-light fill">
       <div class="container-fluid">
 
@@ -155,20 +165,155 @@
               <li class="list-group-item d-flex justify-content-between align-items-center">
                 Monthly Payment:
                 <span id="monthly-payment">$0</span>
+=======
+      <nav class="navbar navbar-expand-sm navbar-light bg-light fill">
+        <div class="container-fluid">
+  
+          <div class="logo-container d-sm-none w-100 h-1 text-center">
+            <a class="" href="#">
+              <img src="./img/IMG-6cc3120f810483c22c94b400c51eb7fb-V-removebg-preview.png" alt="Logo"
+                style="height: 60px;">
+            </a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+  
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-items">
+                <a class="nav-link active" aria-current="page" href="#">Ballina</a>
+>>>>>>> Stashed changes
               </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                Total Payment:
-                <span id="total-payment">$0</span>
+              <li class="nav-items">
+                <a class="nav-link" href="./pages/sherbimet/sherbimet.html">Shërbimet</a>
               </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                Total Interest:
-                <span id="total-interest">$0</span>
+              <li class="nav-items">
+                <a href="#" class="d-none d-sm-block">
+                  <img src="./img/IMG-6cc3120f810483c22c94b400c51eb7fb-V-removebg-preview.png" alt="Logo"
+                    style="height: 80px;">
+                </a>
+              </li>
+              <li class="nav-items ">
+                <a class="nav-link" href="./pages/klientet.html">Klientët</a>
+              </li>
+              <li class="nav-items">
+                <a class="nav-link" href="./pages/rreth-nesh.html">Rreth Nesh</a>
               </li>
             </ul>
           </div>
         </div>
+        <!-- Actual logo, absolutely positioned to be in the center -->
+  
+      </nav>
+  
+  
+      <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel"
+        data-mdb-carousel-init="" data-mdb-carousel-initialized="true">
+  
+        <div class="carousel-indicators">
+          <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="0" class=""
+            aria-label="Slide 1"></button>
+          <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="1" aria-label="Slide 2"
+            class=""></button>
+          <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="2" aria-label="Slide 3"
+            class="active" aria-current="true"></button>
+        </div>
+  
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <img src="./img/plotFoto(7).jpg" class="d-block w-100"
+              alt="Sunset Over the City">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+          </div>
+  
+          <div class="carousel-item">
+            <img src="./img/plotFoto(8).jpg" class="d-block w-100"
+              alt="Canyon at Nigh">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+  
+          <div class="carousel-item active">
+            <img src="./img/plotFoto(9).jpg" class="d-block w-100"
+              alt="Cliff Above a Stormy Sea">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
+          </div>
+        </div>
+  
+        <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
+          <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+          <i class="fa-solid fa-chevron-left" style="font-size: 1.5rem; color: #000;"></i>
+        </button>
+        <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
+          <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+          <i class="fa-solid fa-chevron-right" style="font-size: 1.5rem; color: #000;"></i>
+        </button>
       </div>
-    </div>
+  
+      <div class="loan-container container mt-5">
+        <div class="row">
+          <div class="col-md-6 order-md-1">
+            <!-- Loan Calculator Form -->
+            <form id="loan-form">
+              <div class="form-group">
+                <label for="amount">Loan amount</label>
+                <input type="number" class="form-control" id="amount" placeholder="Enter amount">
+              </div>
+              <div class="form-group">
+                <label for="years">Loan term in years</label>
+                <input type="number" class="form-control" id="years" placeholder="Enter years" oninput="updateMonths()">
+              </div>
+              <div class="form-group">
+                <label for="months">Loan term in months</label>
+                <input type="number" class="form-control" id="months" placeholder="Enter months" oninput="updateYears()">
+              </div>
+              <div class="form-group">
+                <label for="rate">Interest rate per year (%)</label>
+                <input type="number" class="form-control" id="rate" step="0.1" placeholder="Enter interest rate">
+              </div>
+              <div class="form-group d-flex justify-content-center">
+                <button type="button" class="btn btn-primary" onclick="calculateLoan()">Calculate</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6 order-md-2" id="scroll-here">
+            <!-- Results -->
+            <h2>Loan Summary</h2>
+            <div id="results" class="p-3 border bg-light">
+              <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Monthly Payment:
+                  <span id="monthly-payment">$0</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Total Payment:
+                  <span id="total-payment">$0</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Total Interest:
+                  <span id="total-interest">$0</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
   </div>
 
   <footer class="footer py-3 mt-4 zi-bg bardh-text">
@@ -184,9 +329,9 @@
     <p class="border-top-gray" style="width: 80%; margin: 0 auto;"></p>
     <p class="text-center mt-3 contact-info">info@crediccardcompany.com | +38344234529 <br> ©Credit Card Company</p>
   </footer>
+</diV>
 
-
-
+  <script src="script.js"></script>
   <!-- Bootstrap Bundle with Popper -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

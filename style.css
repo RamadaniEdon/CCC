@@ -570,3 +570,67 @@ h2 {
 .container .box .body .content div h3 {
   letter-spacing: 1px;
 }
+
+#main-logo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: spin 2s linear forwards;
+}
+
+.c-part {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* Initially hidden or positioned behind the main logo */
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fly-off-1 {
+  to { transform: translate(-200vw, 0); } /* Left direction off-screen */
+}
+
+@keyframes fly-off-2 {
+  to { transform: translate(100vw, -200vh); } /* Up direction off-screen */
+}
+
+@keyframes fly-off-3 {
+  to { transform: translate(200vw, 200vh); } /* Right and down off-screen */
+}
+
+@keyframes fadeInContent {
+  to {
+    opacity: 1;
+  }
+}
+
+
+body {
+  margin: 0;
+  background-color: rgb(248, 248, 248); /* Sets the background color of the entire page to black */
+}
+
+#main-content {
+  /* Initial state is fully transparent and not displayed */
+  display: none;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  /* Position your content as required */
+}
