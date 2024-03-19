@@ -17,7 +17,7 @@ window.addEventListener('load', function() {
         mainContent.style.display = 'block';
         mainContent.style.animation = 'fadeInContent 1s forwards';
         // Set the body background back to the original color or make it transparent
-        document.body.style.backgroundColor = 'transparent';
+        document.body.style.backgroundColor = '#f1e8e3';
       }, 500); // This timeout should match the longest 'fly-off' animation duration
     });
   });
