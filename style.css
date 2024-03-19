@@ -538,6 +538,11 @@ iframe {
   .sherbime-sidebar-title {
     font-size: 1.1rem !important;
   }
+
+  .text-page {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
 }
 
 
