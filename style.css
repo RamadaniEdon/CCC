@@ -119,6 +119,12 @@ body {
   font-size: larger;
 }
 
+.nav-translate {
+  font-size: larger;
+  color: #aaa;
+
+}
+
 .nav-link>img {
   height: 100px;
 }
@@ -165,12 +171,12 @@ nav.fill ul li a:after {
   opacity: 0;
 }
 
-nav.fill ul li a:hover {
+nav.fill ul li a:not(.logo-link):hover {
   color: #fff;
   z-index: 1;
 }
 
-nav.fill ul li a:hover:after {
+nav.fill ul li a:not(.logo-link):hover:after {
   z-index: -10;
   animation: fill 1s forwards;
   -webkit-animation: fill 1s forwards;
@@ -205,6 +211,9 @@ nav.fill ul li a:hover:after {
   .nav-link {
     font-size: larger;
   }
+  .nav-translate {
+    font-size: larger;
+  }
 }
 
 @media (max-width: 992px) {
@@ -213,6 +222,9 @@ nav.fill ul li a:hover:after {
   }
 
   .nav-link {
+    font-size: medium;
+  }
+  .nav-translate {
     font-size: medium;
   }
 }
@@ -228,6 +240,10 @@ nav.fill ul li a:hover:after {
   }
 
   .nav-link {
+    font-size: small;
+  }
+
+  .nav-translate {
     font-size: small;
   }
 }
@@ -476,6 +492,13 @@ iframe {
     height: 80vh;
     min-height: 30rem;
     width: 100%;
+  }
+  @-webkit-keyframes fill {
+    100% {
+      width: 100%;
+      height: 1px;
+      background: #333;
+    }
   }
 }
 
