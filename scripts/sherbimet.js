@@ -90,6 +90,9 @@ window.onload = function () {
 
   window.addEventListener('message', function (event) {
     // Check if the message is from the iframe and contains click event data
+    // if (event.source === iframe.contentWindow && event.data.type === 'loaded') {
+    //   iframe.style.visibility = 'visible';
+    // }
     if (event.source === iframe.contentWindow && event.data.type === 'click') {
       // Handle the click event in the parent page
       if (visibleSideBar) {

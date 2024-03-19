@@ -1,4 +1,5 @@
 window.onload = function () {
+  parent.postMessage({ type: 'loaded' }, '*');
   window.addEventListener('click', function (event) {
     // Send click event data to parent page
     parent.postMessage({
