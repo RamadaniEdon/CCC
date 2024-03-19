@@ -90,10 +90,12 @@ body {
   color: #cccccc;
 }
 
+
 .navbar {
   display: flex;
   align-items: center;
   box-shadow: 0px 5px 0px #dedede;
+  z-index: 11;
 }
 
 .navbar-nav {
@@ -115,6 +117,12 @@ body {
 
 .nav-link {
   font-size: larger;
+}
+
+.nav-translate {
+  font-size: larger;
+  color: #aaa;
+
 }
 
 .nav-link>img {
@@ -163,12 +171,12 @@ nav.fill ul li a:after {
   opacity: 0;
 }
 
-nav.fill ul li a:hover {
+nav.fill ul li a:not(.logo-link):hover {
   color: #fff;
   z-index: 1;
 }
 
-nav.fill ul li a:hover:after {
+nav.fill ul li a:not(.logo-link):hover:after {
   z-index: -10;
   animation: fill 1s forwards;
   -webkit-animation: fill 1s forwards;
@@ -203,6 +211,9 @@ nav.fill ul li a:hover:after {
   .nav-link {
     font-size: larger;
   }
+  .nav-translate {
+    font-size: larger;
+  }
 }
 
 @media (max-width: 992px) {
@@ -211,6 +222,9 @@ nav.fill ul li a:hover:after {
   }
 
   .nav-link {
+    font-size: medium;
+  }
+  .nav-translate {
     font-size: medium;
   }
 }
@@ -226,6 +240,10 @@ nav.fill ul li a:hover:after {
   }
 
   .nav-link {
+    font-size: small;
+  }
+
+  .nav-translate {
     font-size: small;
   }
 }
@@ -309,8 +327,12 @@ nav.fill ul li a:hover:after {
 }
 
 #startingInfo {
-  margin-left: 10px;
-  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+  /* margin-left: 10px; */
+  /* min-height: 60vh; */
+
+  flex: 1;
 }
 
 
@@ -318,8 +340,11 @@ nav.fill ul li a:hover:after {
   margin-left: 10px;
   flex-grow: 1;
   min-height: 60vh;
-  background-color: var(--ekalterta);
+  background-color: var(--ebardha);
   overflow: scroll;
+  border: 1px solid #dddddd;
+  z-index: 80;
+  /* transition: 3s; */
 }
 
 .containerFlex {
@@ -392,10 +417,12 @@ nav.fill ul li a:hover:after {
 }
 
 .moveLeft {
-  left: -15rem;
+  left: -16rem;
 }
 
-
+iframe {
+  background-color: white;
+}
 
 .sherbim-container {
   display: flex;
@@ -412,6 +439,11 @@ nav.fill ul li a:hover:after {
   flex-direction: column;
 }
 
+.only-text {
+  width: 100%;
+  align-self: center;
+}
+
 .foto-sherbim {
   width: 50%;
   align-self: center;
@@ -421,6 +453,55 @@ nav.fill ul li a:hover:after {
   padding-bottom: 10px;
   width: 80%;
   margin: 0 auto;
+}
+
+#sherbimeContainer {
+  border: 1px solid #cccccc;
+  z-index: 100;
+}
+
+/* Customize the vertical scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  /* Width of the scrollbar */
+  height: 10px;
+  /* Height of the scrollbar */
+}
+
+/* Customize the vertical scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  /* Color of the thumb */
+  border-radius: 10px;
+  /* Rounded corners */
+}
+
+/* Customize the vertical scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: white;
+  /* Color of the track */
+}
+
+/* Customize the corner where vertical and horizontal scrollbars meet */
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+  /* Color of the corner */
+}
+
+/* Optionally, you can customize the horizontal scrollbar */
+/* This example makes it thinner and less visible */
+::-webkit-scrollbar:horizontal {
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background-color: transparent;
+  /* Make it transparent */
+}
+
+::-webkit-scrollbar-track:horizontal {
+  background-color: transparent;
+  /* Make it transparent */
 }
 
 @media (max-width: 768px) {
@@ -442,11 +523,12 @@ nav.fill ul li a:hover:after {
 
   #sherbimeContainer {
     position: fixed;
-    top: 15vh;
-    height: 70vh;
+    top: 0;
+    height: 100vh;
     max-height: fit-content;
-    width: 15rem;
+    width: 16rem;
     transition: 0.5s;
+    border-right: 1px solid #666666;
   }
 
   #showSideBarBtn {
@@ -464,10 +546,22 @@ nav.fill ul li a:hover:after {
     min-height: 30rem;
     width: 100%;
   }
+  @-webkit-keyframes fill {
+    100% {
+      width: 100%;
+      height: 1px;
+      background: #333;
+    }
+  }
+  .sherbime-sidebar-links {
+    font-size: 0.8rem;
+  }
+
+  .sherbime-sidebar-title {
+    font-size: 1.1rem !important;
+  }
 }
-
-
-.container {
+.loan-container {
   background-color: #ffffff;
   padding: 20px;
   border-radius: 10px;
@@ -510,6 +604,7 @@ h2 {
   .order-md-1 {
     order: 2;
   }
+
   .order-md-2 {
     order: 1;
     margin-top: 20px;
@@ -569,4 +664,100 @@ h2 {
 
 .container .box .body .content div h3 {
   letter-spacing: 1px;
+}
+
+#main-logo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: spin 2s linear forwards;
+}
+
+.c-part {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fly-off-1 {
+  to {
+    transform: translate(-200vw, 0);
+  }
+
+  /* Left direction off-screen */
+}
+
+@keyframes fly-off-2 {
+  to {
+    transform: translate(100vw, -200vh);
+  }
+
+  /* Up direction off-screen */
+}
+
+@keyframes fly-off-3 {
+  to {
+    transform: translate(200vw, 200vh);
+  }
+
+  /* Right and down off-screen */
+}
+
+@keyframes fadeInContent {
+  to {
+    opacity: 1;
+  }
+}
+
+
+body {
+  margin: 0;
+  background-color: rgb(248, 248, 248);
+}
+
+#main-content {
+  display: none;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.text-page {
+  margin: 20px 50px;
+  padding: 10px 30px;
+  flex-grow: 1;
+  min-height: 60vh;
+  background-color: white;
+}
+
+.text-page-text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.text-page-text p {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

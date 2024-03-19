@@ -23,6 +23,9 @@
   <script src="./../../scripts/sherbimet.js"></script>
 
   <style>
+    body{
+      background-color: #f1e8e3;
+    }
   </style>
 </head>
 
@@ -56,7 +59,7 @@
               <a class="nav-link active" href="#">Shërbimet</a>
             </li>
             <li class="nav-items">
-              <a href="./index.html" class="d-none d-sm-block">
+              <a href="../../index.html" class="d-none d-sm-block logo-link">
                 <img src="../../img/IMG-6cc3120f810483c22c94b400c51eb7fb-V-removebg-preview.png" alt="Logo"
                   style="height: 80px;">
               </a>
@@ -67,9 +70,13 @@
             <li class="nav-items">
               <a class="nav-link" href="../rreth-nesh.html">Rreth Nesh</a>
             </li>
+            <li class="nav-items">
+              <a class="nav-link d-sm-none" href="../services/services.html">EN</a>
+            </li>
           </ul>
         </div>
       </div>
+      <a class="nav-translate d-none d-sm-block" href="../services/services.html">EN</a>
       <!-- Actual logo, absolutely positioned to be in the center -->
 
     </nav>
@@ -79,7 +86,7 @@
       <div id="sherbimeContainer" class="moveLeft">
         <div id="sherbimeSideBar" class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white">
           <a href="#" class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
-            <span class="fs-5 fw-semibold margin0auto" style="text-transform: uppercase;">Shërbimet</span>
+            <span class="fs-5 fw-semibold margin0auto sherbime-sidebar-title" style="text-transform: uppercase;">Shërbimet</span>
           </a>
           <div id="sherbimet" class="list-group list-group-flush border-bottom scrollarea">
 
@@ -114,19 +121,12 @@
                 <div class="mb-1 margin0auto sherbime-sidebar-links">Këshilla për Kredimarrje dhe Kredidhënje</div>
               </div>
             </a>
-            <a href="./sherbimi7.html" target="television" class="list-group-item list-group-item-action py-3 lh-tight">
-              <div class="d-flex w-100 align-items-center justify-content-between">
-                <div class="mb-1 margin0auto sherbime-sidebar-links">Këshilla për Biznes</div>
-              </div>
-            </a>
             <i id="showSideBarBtn" class="fa-solid fa-circle-arrow-right"></i>
           </div>
         </div>
       </div>
-      <div id="startingInfo" class="displayBlock">
-
-      </div>
-      <iframe id="television" class="television displayNone" name="television"></iframe>
+      
+      <iframe id="television" class="television displayBlock" style="visibility: hidden;" name="television" src="./sherbimetinfo.html"></iframe>
     </div>
 
   </div>
@@ -141,7 +141,8 @@
       </li>
     </ul>
     <p class="border-top-gray" style="width: 80%; margin: 0 auto;"></p>
-    <p class="text-center mt-3 contact-info">info@crediccardcompany.com | +38344234529 <br> ©Credit Card Company</p>
+    <p class="text-center mt-3 contact-info">info@creditconsultingcompany.org | +38344262114 <br> ©Credit Consulting
+      Company</p>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
