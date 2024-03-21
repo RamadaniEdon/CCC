@@ -16,7 +16,8 @@ window.addEventListener('load', function() {
 
       setTimeout(() => {
         const mainContent = document.getElementById('main-content');
-        mainContent.style.display = 'block';
+        mainContent.style.display = 'flex';
+        mainContent.style.flexDirection = 'column';
         mainContent.style.animation = 'fadeInContent 1s forwards';
         document.body.style.backgroundColor = '#f1e8e3';
       }, 500);
@@ -43,7 +44,8 @@ window.addEventListener('load', function() {
 
       setTimeout(() => {
         const mainContent = document.getElementById('main-content');
-        mainContent.style.display = 'block';
+        mainContent.style.display = 'flex';
+        mainContent.style.flexDirection = 'column';
         mainContent.style.animation = 'fadeInContent 1s forwards';
         document.body.style.backgroundColor = '#043d70';
       }, 500);
