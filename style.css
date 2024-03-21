@@ -779,16 +779,220 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.side-list-group-item:hover {
-  background-color: #f0f0f0; /* Change this to the desired hover background color */
+
+
+
+
+
+
+
+
+
+
+
+
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////COLORS OF THE PAGE//////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+
+
+/* ////////////////ALL PAGES/////////////// */
+/* ////////////////BODY////////////// */
+/* animation background */
+body {
+  /* background-color: yellow !important; */
 }
 
+/* ////////////////NAVBAR//////////////// */
+/* navbar bg*/
+.navbar {
+  /* background-color: yellow !important; */
+}
+/* navbar links color */
+.navbar-links {
+  /* color: orange !important; */
+}
+/* active navbar link color */
+.active-navbar-link {
+  /* color: red !important; */
+}
+
+/* ////////////FOOTER//////////// */
+/* Footer bg and link colors */
+.footer, .footer ul, .footer ul li a {
+  /* background-color: rgb(38, 18, 83); */
+  /* color: rgb(146, 41, 41); */
+}
+/* footer contact info color */
+.footer p {
+  /* color: orange; */
+}
+/* footer border color */
+.border-top-gray {
+  /* border-color: rgb(25, 3, 7); */
+}
+/* footer links hover colors */
+.footer ul li a:hover {
+  /* color: rgb(241, 98, 98) !important; */
+}
+
+/* /////////////////////INDEX///////////////// */
+/* /////////////////////INDEX CONTENT//////////////// */
+/* index background */
+#main-content {
+  /* background-color: yellow; */
+}
+/* ////////////////CALCULATOR/////////////// */
+/* calculator bg */
+.calculator {
+  /* background-color: yellow; */
+  /* color: orange !important; */
+}
+/* calculator label colors */
+.form-control {
+  /* background-color: black; */
+  /* color: orange; */
+}
+/* input placeholder color */
+.form-control::placeholder {
+  /* color: red; */
+}
+/* input placeholder when focused */
+.form-control:focus::placeholder {
+  /* color: yellow; */
+}
+/* input colors when focused */
+.form-control:focus {
+  /* color: white; */
+  /* background-color: blue; */
+}
+/* calculator button colors and hover */
+.calculator-button {
+  /* background-color: red; */
+  /* color: yellow; */
+  /* border-color: black; */
+}
+.calculator-button:hover {
+  /* background-color: yellow; */
+  /* color: red; */
+  /* border-color: orangered; */
+}
+/* Loan Summary Title color  */
+#scroll-here > h2:first-of-type {
+  /* color: pink; */
+}
+/* Results dynamic color around the results
+change the javascript as well
+add bg-light class again to it if you dont want to change it */
+#results {
+  /* background-color: yellow; */
+}
+/* Calculator results colors */
+.calculator-results li {
+  /* background-color: yellow; */
+  /* color: red; */
+}
+
+/* /////////////SHERBIMET//////////////// */
+/* /////////////SIDEBAR//////////////// */
+/* Side bar title colors */
+#sherbimeSideBar > a {
+  /* background-color: yellow; */
+  /* color: blue !important; */
+}
+/* sidebar bg color, only in telephone mode */
+#sherbimeSideBar{
+  /* background-color: orangered !important; */
+}
+/* Sidebar border */
+#sherbimeContainer, #sherbimet a, #sherbimet, .scrollarea, #sherbimeSideBar > a {
+  /* border-color: rgb(103, 21, 21) !important; */
+  /* border-bottom-color: rgb(103, 21, 21) !important; */
+}
+/* Sidebar links colors and hover and clicked colors 
+NOTE: better to make color of hover same with color of clicked*/
+#sherbimet a {
+  /* background-color: rgb(97, 97, 42); */
+  /* color: pink; */
+}
+#sherbimet a:hover {
+  background-color: #007bff;
+}
 .side-list-group-item:hover .sherbime-sidebar-links {
-  color: #0b2949; /* Change this to the desired hover text color */
+ color: #ffffff; 
+}
+.clicked {
+  background-color: #007bff !important;
+  color: #fff !important; 
 }
 
-.clicked {
-  background-color: #007bff !important; /* Change this to the desired clicked background color */
-  color: #fff !important; /* Change this to the desired clicked text color */
-  
+/* ////////////////////IFRAME/////////////// */
+/* iframe bg color
+only visible a little while loading */
+#television {
+  /* background-color: yellow; */
+}
+/* iframe border color */
+#television {
+  /* border-color: rgb(188, 33, 95); */
+}
+
+/* ////////////////////SHERBIM INDIVID AND SHERBIM INFO///////////////// */
+/* sherbim body bg */
+.body-sherbimet {
+  /* background-color: yellowgreen !important; */
+}
+/* sherbim title color */
+.title-sherbim {
+  /* color: yellow !important; */
+}
+/* sherbim container of text and border */
+.body-sherbimet > div {
+  /* background-color: rgb(131, 131, 67) !important; */
+  /* border-color: black !important; */
+}
+/* sherbim text color */
+.body-sherbimet > div > div p, .body-sherbimet > div > div li {
+  /* color: yellow !important; */
+}
+/* sherbim title border bottom color */
+.border-sherbim-title {
+  /* border-color: yellow !important; */
+}
+
+/* //////////////////RRETH NESH//////////////*/
+/* title color and border color */
+.text-page {
+  /* background-color: orange; */
+  /* border-color: rgb(128, 4, 4) !important; */
+}
+/* border of title */
+.text-page > p {
+  /* border-color: red !important; */
+}
+/* text color */
+.text-page-text {
+  /* color: yellow; */
+}
+
+/* //////////////////CLIENTS//////////////*/
+/* background of the rotated box */
+.clients-div > .box > .body > .content {
+  /* background-color: rgb(80, 80, 10); */
+}
+/* background of rotated content */
+.clients-div > .box > .body > .content > div {
+  /* background-color: rgb(39, 13, 68); */
+}
+/* color of content */
+.clients-div > .box > .body > .content > div > p {
+  /* color: rgb(9, 255, 0) !important; */
 }

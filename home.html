@@ -54,10 +54,10 @@
           <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-items">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active navbar-links active-navbar-link" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-items">
-                <a class="nav-link" href="./pages/services/services.html">Services</a>
+                <a class="nav-link navbar-links" href="./pages/services/services.html">Services</a>
               </li>
               <li class="nav-items">
                 <a href="#" class="d-none d-sm-block logo-link">
@@ -66,18 +66,18 @@
                 </a>
               </li>
               <li class="nav-items ">
-                <a class="nav-link" href="./pages/clients.html">Clients</a>
+                <a class="nav-link navbar-links" href="./pages/clients.html">Clients</a>
               </li>
               <li class="nav-items">
-                <a class="nav-link" href="./pages/about-us.html">About Us</a>
+                <a class="nav-link navbar-links" href="./pages/about-us.html">About Us</a>
               </li>
               <li class="nav-items">
-                <a class="nav-link d-sm-none" href="./index.html">AL</a>
+                <a class="nav-link d-sm-none navbar-links" href="./index.html">AL</a>
               </li>
             </ul>
           </div>
         </div>
-        <a class="nav-translate d-none d-sm-block" href="./index.html">AL</a>
+        <a class="nav-translate d-none d-sm-block navbar-links" href="./index.html">AL</a>
         <!-- Actual logo, absolutely positioned to be in the center -->
   
       </nav>
@@ -124,7 +124,7 @@
         </button>
       </div>
   
-      <div class="loan-container container mt-5">
+      <div class="loan-container container mt-5 calculator">
         <div class="row">
           <div class="col-md-6 order-md-1">
             <!-- Loan Calculator Form -->
@@ -146,15 +146,15 @@
                 <input type="number" class="form-control" id="rate" step="0.1" placeholder="Enter interest rate">
               </div>
               <div class="form-group d-flex justify-content-center">
-                <button type="button" class="btn btn-primary" onclick="calculateLoan()">Calculate</button>
+                <button type="button" class="btn btn-primary calculator-button" onclick="calculateLoan()">Calculate</button>
               </div>
             </form>
           </div>
           <div class="col-md-6 order-md-2" id="scroll-here">
             <!-- Results -->
             <h2>Loan Summary</h2>
-            <div id="results" class="p-3 border bg-light">
-              <ul class="list-group">
+            <div id="results" class="p-3 border">
+              <ul class="list-group calculator-results">
                 <li class="list-group-item d-flex justify-content-between align-items-center">
                   Monthly Payment:
                   <span id="monthly-payment">$0</span>
