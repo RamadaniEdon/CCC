@@ -768,3 +768,22 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+
+.side-list-group-item {
+  transition: background-color 0.3s ease;
+}
+
+.side-list-group-item:hover {
+  background-color: #f0f0f0; /* Change this to the desired hover background color */
+}
+
+.side-list-group-item:hover .sherbime-sidebar-links {
+  color: #0b2949; /* Change this to the desired hover text color */
+}
+
+.clicked {
+  background-color: #007bff !important; /* Change this to the desired clicked background color */
+  color: #fff !important; /* Change this to the desired clicked text color */
+  
+}
