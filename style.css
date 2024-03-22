@@ -180,7 +180,7 @@ nav.fill ul li a:not(.logo-link):hover {
   z-index: 1;
 }
 
-nav.fill ul li a:not(.logo-link):hover:after {
+nav.fill ul li a:not(.logo-link, .active-navbar-link):hover:after {
   z-index: -10;
   animation: fill 1s forwards;
   -webkit-animation: fill 1s forwards;
@@ -203,11 +203,11 @@ nav.fill ul li a:not(.logo-link):hover:after {
   100% {
     width: 100%;
     height: 1px;
-    background: #333;
+    background: var(--logoQelt);
   }
 }
 
-.about-us-img{
+.about-us-img {
   width: 50%;
   margin-left: 25%;
 }
@@ -220,6 +220,7 @@ nav.fill ul li a:not(.logo-link):hover:after {
   .nav-link {
     font-size: larger;
   }
+
   .nav-translate {
     font-size: larger;
   }
@@ -233,10 +234,12 @@ nav.fill ul li a:not(.logo-link):hover:after {
   .nav-link {
     font-size: medium;
   }
+
   .nav-translate {
     font-size: medium;
   }
-  .about-us-img{
+
+  .about-us-img {
     width: 75%;
     margin-left: 12.5%;
   }
@@ -259,7 +262,8 @@ nav.fill ul li a:not(.logo-link):hover:after {
   .nav-translate {
     font-size: small;
   }
-  .about-us-img{
+
+  .about-us-img {
     margin-left: 0%;
     width: 100%;
   }
@@ -380,7 +384,8 @@ nav.fill ul li a:not(.logo-link):hover:after {
 }
 
 .sherbime-sidebar-links {
-  text-align: center;
+  text-align: left;
+  align-items: left !important;
   text-transform: uppercase;
 }
 
@@ -563,6 +568,7 @@ iframe {
     min-height: 30rem;
     width: 100%;
   }
+
   .sherbime-sidebar-links {
     font-size: 0.8rem;
   }
@@ -571,6 +577,7 @@ iframe {
     font-size: 1.1rem !important;
   }
 }
+
 .loan-container {
   background-color: #ffffff;
   padding: 20px;
@@ -813,7 +820,7 @@ body {
 /* ////////////////BODY////////////// */
 /* animation background */
 body {
-  /* background-color: yellow !important; */
+  /* background-color: white !important; */
 }
 
 /* ////////////////NAVBAR//////////////// */
@@ -821,122 +828,163 @@ body {
 .navbar {
   /* background-color: yellow !important; */
 }
+
 /* navbar links color */
 .navbar-links {
-  /* color: orange !important; */
+  color: var(--logoMshelt) !important;
+  /* background-color: #ccc */
 }
+
+.navbar-links:hover {
+  color: var(--logoMesme) !important;
+  transition: 0s;
+}
+
+.navbar-links:hover::after {
+  transition: 0s;
+}
+
 /* active navbar link color */
 .active-navbar-link {
-  /* color: red !important; */
+  color: var(--logoMesme) !important;
+  border-bottom: 1px solid var(--logoMesme);
+  /* width: 100%;
+  height: 1px;
+  background: var(--logoQelt); */
 }
 
 /* ////////////FOOTER//////////// */
 /* Footer bg and link colors */
-.footer, .footer ul, .footer ul li a {
-  /* background-color: rgb(38, 18, 83); */
-  /* color: rgb(146, 41, 41); */
+.footer,
+.footer ul,
+.footer ul li a {
+  /* background-color: var(--logoMshelt); */
+  /* color: white; */
 }
+
 /* footer contact info color */
 .footer p {
-  /* color: orange; */
+  /* color: white; */
 }
+
 /* footer border color */
 .border-top-gray {
   /* border-color: rgb(25, 3, 7); */
 }
+
 /* footer links hover colors */
 .footer ul li a:hover {
-  /* color: rgb(241, 98, 98) !important; */
+  color: var(--logoMesme) !important;
 }
 
 /* /////////////////////INDEX///////////////// */
 /* /////////////////////INDEX CONTENT//////////////// */
 /* index background */
 #main-content {
-  /* background-color: yellow; */
+  background-color: var(--logoMesme);
 }
+
 /* ////////////////CALCULATOR/////////////// */
 /* calculator bg */
 .calculator {
   /* background-color: yellow; */
-  /* color: orange !important; */
+  color: var(--logoMshelt) !important;
 }
+
 /* calculator label colors */
-.form-control {
+.form-control>label {
   /* background-color: black; */
-  /* color: orange; */
+  /* color: var(--ebardha) !important; */
 }
+
 /* input placeholder color */
 .form-control::placeholder {
   /* color: red; */
 }
+
 /* input placeholder when focused */
 .form-control:focus::placeholder {
   /* color: yellow; */
 }
+
 /* input colors when focused */
 .form-control:focus {
   /* color: white; */
   /* background-color: blue; */
 }
+
 /* calculator button colors and hover */
 .calculator-button {
-  /* background-color: red; */
+  background-color: var(--logoQelt);
   /* color: yellow; */
-  /* border-color: black; */
+  border-color: var(--logoQelt);
 }
+
 .calculator-button:hover {
-  /* background-color: yellow; */
+  background-color: var(--logoMshelt);
   /* color: red; */
-  /* border-color: orangered; */
+  border-color: var(--logoMshelt);
 }
+
 /* Loan Summary Title color  */
-#scroll-here > h2:first-of-type {
-  /* color: pink; */
+#scroll-here>h2:first-of-type {
+  color: var(--logoQelt);
 }
+
 /* Results dynamic color around the results
 change the javascript as well
 add bg-light class again to it if you dont want to change it */
 #results {
   /* background-color: yellow; */
 }
+
 /* Calculator results colors */
 .calculator-results li {
   /* background-color: yellow; */
-  /* color: red; */
+  color: var(--logoMshelt);
 }
 
 /* /////////////SHERBIMET//////////////// */
 /* /////////////SIDEBAR//////////////// */
 /* Side bar title colors */
-#sherbimeSideBar > a {
+#sherbimeSideBar>a {
   /* background-color: yellow; */
-  /* color: blue !important; */
+  color: var(--logoMshelt) !important;
 }
+
 /* sidebar bg color, only in telephone mode */
-#sherbimeSideBar{
+#sherbimeSideBar {
   /* background-color: orangered !important; */
 }
+
 /* Sidebar border */
-#sherbimeContainer, #sherbimet a, #sherbimet, .scrollarea, #sherbimeSideBar > a {
+#sherbimeContainer,
+#sherbimet a,
+#sherbimet,
+.scrollarea,
+#sherbimeSideBar>a {
   /* border-color: rgb(103, 21, 21) !important; */
   /* border-bottom-color: rgb(103, 21, 21) !important; */
 }
+
 /* Sidebar links colors and hover and clicked colors 
 NOTE: better to make color of hover same with color of clicked*/
 #sherbimet a {
-  /* background-color: rgb(97, 97, 42); */
-  /* color: pink; */
+  /* background-color: #fff; */
+  color: var(--logoMshelt);
 }
+
 #sherbimet a:hover {
-  background-color: #007bff;
+  background-color: var(--logoMesme);
 }
+
 .side-list-group-item:hover .sherbime-sidebar-links {
- color: #ffffff; 
+  color: #ffffff;
 }
+
 .clicked {
-  background-color: #007bff !important;
-  color: #fff !important; 
+  background-color: var(--logoMesme) !important;
+  color: #fff !important;
 }
 
 /* ////////////////////IFRAME/////////////// */
@@ -945,6 +993,7 @@ only visible a little while loading */
 #television {
   /* background-color: yellow; */
 }
+
 /* iframe border color */
 #television {
   /* border-color: rgb(188, 33, 95); */
@@ -953,24 +1002,29 @@ only visible a little while loading */
 /* ////////////////////SHERBIM INDIVID AND SHERBIM INFO///////////////// */
 /* sherbim body bg */
 .body-sherbimet {
-  /* background-color: yellowgreen !important; */
+  /* background-color: #fefefe !important; */
 }
+
 /* sherbim title color */
 .title-sherbim {
-  /* color: yellow !important; */
+  color: var(--logoMesme) !important;
 }
+
 /* sherbim container of text and border */
-.body-sherbimet > div {
+.body-sherbimet>div {
   /* background-color: rgb(131, 131, 67) !important; */
-  /* border-color: black !important; */
+  /* border-color: var(--logoMshelt) !important; */
 }
+
 /* sherbim text color */
-.body-sherbimet > div > div p, .body-sherbimet > div > div li {
-  /* color: yellow !important; */
+.body-sherbimet>div>div p,
+.body-sherbimet>div>div li {
+  color: var(--logoMshelt) !important;
 }
+
 /* sherbim title border bottom color */
 .border-sherbim-title {
-  /* border-color: yellow !important; */
+  border-color: var(--logoMshelt) !important;
 }
 
 /* //////////////////RRETH NESH//////////////*/
@@ -979,25 +1033,29 @@ only visible a little while loading */
   /* background-color: orange; */
   /* border-color: rgb(128, 4, 4) !important; */
 }
+
 /* border of title */
-.text-page > p {
-  /* border-color: red !important; */
+.text-page>p {
+  border-color: var(--logoMshelt) !important;
 }
+
 /* text color */
 .text-page-text {
-  /* color: yellow; */
+  color: var(--logoMshelt);
 }
 
 /* //////////////////CLIENTS//////////////*/
 /* background of the rotated box */
-.clients-div > .box > .body > .content {
-  /* background-color: rgb(80, 80, 10); */
+.clients-div>.box>.body>.content {
+  background-color: var(--logoMshelt);
 }
+
 /* background of rotated content */
-.clients-div > .box > .body > .content > div {
-  /* background-color: rgb(39, 13, 68); */
+.clients-div>.box>.body>.content>div {
+  background-color: #fff;
 }
+
 /* color of content */
-.clients-div > .box > .body > .content > div > p {
-  /* color: rgb(9, 255, 0) !important; */
+.clients-div>.box>.body>.content>div>p {
+  color: var(--logoMshelt) !important;
 }
