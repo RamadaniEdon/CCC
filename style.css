@@ -612,6 +612,7 @@ h2 {
 
 @media (max-width: 768px) {
   .order-md-1 {
+    margin-top: 50px;
     order: 2;
   }
 
