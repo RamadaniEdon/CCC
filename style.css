@@ -11,6 +11,7 @@
   --logoQelt: #05B0DA;
   --logoMshelt: #073D6C;
   --logoMesme: #038BBB;
+  --logoTjeter: #048BBB;
 }
 
 .zi-text {
@@ -624,6 +625,7 @@ h2 {
 
 @media (max-width: 768px) {
   .order-md-1 {
+    margin-top: 50px;
     order: 2;
   }
 
@@ -711,8 +713,8 @@ h2 {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   margin-top: -100px;
   margin-left: -100px;
   background-size: contain;
@@ -770,7 +772,7 @@ body {
   display: none;
   opacity: 0;
   transition: opacity 1s ease-in-out;
-  background-color: var(--ekalterta);
+  background-color: var(--logoMesme);
 }
 
 .text-page {
@@ -872,7 +874,42 @@ body {
 
 
 
+.feature {
+  background-color: var(--logoMshelt); /* Bootstrap primary color, adjust as needed */
+  color: white;
+  padding: 100px 0;
+}
 
+.icon-feature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Bootstrap secondary color, adjust as needed */
+  margin: 0 auto 20px;
+}
+
+.feature-text {
+  text-align: center;
+}
+
+.description {
+  margin: 0;
+  line-height: 1.6; /* Adjust line height for better readability */
+}
+
+/* Hide <br> tags on small screens */
+.description br {
+  display: none;
+}
+
+/* Show <br> tags on screens larger than 576px */
+@media (min-width: 576px) {
+  .description br {
+    display: inline;
+  }
+}
 
 
 @media (max-width: 1106px) {
