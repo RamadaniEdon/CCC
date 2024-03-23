@@ -1105,6 +1105,7 @@ body {
 .calculator {
   /* background-color: yellow; */
   color: var(--logoMshelt) !important;
+  margin-bottom: 3rem;
 }
 
 /* calculator label colors */
@@ -1254,12 +1255,15 @@ only visible a little while loading */
 
 /* border of title */
 .text-page>p {
+  width: 70%;
   font-weight: 500;
   border-color: var(--logoMshelt) !important;
 }
 
 /* text color */
 .text-page-text {
+  margin: 0 auto;
+  width: 80%;
   color: var(--logoMshelt);
 }
 
