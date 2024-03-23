@@ -20,12 +20,22 @@
 </head>
 
 <body>
+
+  <div id="logo-container">
+    <img id="main-logo" src="../img/favicon1-removebg-preview.png" alt="Full Logo">
+    <img id="c1" class="c-part" src="../img/favicon1-removebg-preview-modified.png" alt="C 1">
+    <img id="c2" class="c-part" src="../img/favicon1-removebg-preview-modified(1).png" alt="C 2">
+    <img id="c3" class="c-part" src="../img/favicon1-removebg-preview-modified(2).png" alt="C 3">
+  </div>
+
+  <div id="main-content" style="display: none;">
+
   <div class="content">
     <nav class="navbar navbar-expand-sm navbar-light bg-light fill">
       <div class="container-fluid">
 
         <div class="logo-container d-sm-none w-100 h-1 text-center">
-          <a class="" href="#">
+          <a class="" href="../home.html">
             <img src="../img/IMG-6cc3120f810483c22c94b400c51eb7fb-V-removebg-preview.png" alt="Logo"
               style="height: 60px;">
           </a>
@@ -40,10 +50,10 @@
         <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-items">
-              <a class="nav-link" aria-current="page" href="../home.html">Home</a>
+              <a class="nav-link navbar-links" aria-current="page" href="../home.html">Home</a>
             </li>
             <li class="nav-items">
-              <a class="nav-link" href="./services/services.html">Services</a>
+              <a class="nav-link navbar-links" href="./services/services.html">Services</a>
             </li>
             <li class="nav-items">
               <a href="../home.html" class="d-none d-sm-block logo-link">
@@ -52,33 +62,30 @@
               </a>
             </li>
             <li class="nav-items ">
-              <a class="nav-link" href="./clients.html">Clients</a>
+              <a class="nav-link navbar-links" href="./clients.html">Clients</a>
             </li>
             <li class="nav-items">
-              <a class="nav-link active" href="#">About Us</a>
+              <a class="nav-link active navbar-links active-navbar-link" href="#">About Us</a>
             </li>
             <li class="nav-items">
-              <a class="nav-link d-sm-none" href="./rreth-nesh.html">AL</a>
+              <a class="nav-link d-sm-none navbar-links" href="./rreth-nesh.html">AL</a>
             </li>
           </ul>
         </div>
       </div>
-      <a class="nav-translate d-none d-sm-block" href="./rreth-nesh.html">AL</a>
+      <a class="nav-translate d-none d-sm-block navbar-links" href="./rreth-nesh.html">AL</a>
       <!-- Actual logo, absolutely positioned to be in the center -->
 
     </nav>
-    <div class="border border-5 border-dashed rounded text-page">
+    <div class="rounded text-page">
       <p class="display-6 text-center mt-3 border-bottom title-sherbim">About Us</p>
-      <div class="sherbim-container">
+      <div class="sherbim-container" style="display: flex; flex-direction: column;">
+        <img class="about-us-img" src="../img/IMG-6cc3120f810483c22c94b400c51eb7fb-V-removebg-preview.png">
         <div class="text-page-text">
 
-
-
-
           <p>CCC LLC was founded in 2021 as a company focused on advising and supporting its clients to assist them in
-            managing their debt repayments and improving the skills of their staff through training.</p>
-
-          <p>
+            managing their debt repayments and improving the skills of their staff through training. 
+            
             The primary goal of Credit Consulting Company "CCC" is to provide excellent services in lending and finance,
             offering tailored solutions that are characteristic and sustainable in the long term.
           </p>
@@ -103,10 +110,12 @@
       <li class="nav-item footer-links"><a href="#" class="nav-link px-2 bardh-text">About Us</a></li>
     </ul>
     <p class="border-top-gray" style="width: 80%; margin: 0 auto;"></p>
-    <p class="text-center mt-3 contact-info">info@crediccardcompany.com | +38344262114 <br> ©Credit Consulting Company
+    <p class="text-center mt-3 contact-info">info@creditconsultingcompany.com | +38344262114 <br> ©Credit Consulting Company
     </p>
   </footer>
+  </div>
 
+  <script src="../script.js"></script>
   <script src="../scripts/klientet.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

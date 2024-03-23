@@ -23,127 +23,135 @@
   <script src="./../../scripts/sherbimet.js"></script>
 
   <style>
-    body{
-      background-color: #f1e8e3;
-    }
   </style>
 </head>
 
 <body>
 
 
-  <div class="content">
-
-    <nav class="navbar navbar-expand-sm navbar-light bg-light fill">
-      <div class="container-fluid">
-
-        <div class="logo-container d-sm-none w-100 h-1 text-center">
-          <a class="" href="#">
-            <img src="../../img/IMG-6cc3120f810483c22c94b400c51eb7fb-V-removebg-preview.png" alt="Logo"
-              style="height: 60px;">
-          </a>
-        </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-
-        <!-- Navbar links -->
-        <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-items">
-              <a class="nav-link" aria-current="page" href="../../index.html">Ballina</a>
-            </li>
-            <li class="nav-items">
-              <a class="nav-link active" href="#">Shërbimet</a>
-            </li>
-            <li class="nav-items">
-              <a href="../../index.html" class="d-none d-sm-block logo-link">
-                <img src="../../img/IMG-6cc3120f810483c22c94b400c51eb7fb-V-removebg-preview.png" alt="Logo"
-                  style="height: 80px;">
-              </a>
-            </li>
-            <li class="nav-items ">
-              <a class="nav-link" href="../klientet.html">Klientët</a>
-            </li>
-            <li class="nav-items">
-              <a class="nav-link" href="../rreth-nesh.html">Rreth Nesh</a>
-            </li>
-            <li class="nav-items">
-              <a class="nav-link d-sm-none" href="../services/services.html">EN</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <a class="nav-translate d-none d-sm-block" href="../services/services.html">EN</a>
-      <!-- Actual logo, absolutely positioned to be in the center -->
-
-    </nav>
-
-
-    <div class="containerFlex">
-      <div id="sherbimeContainer" class="moveLeft">
-        <div id="sherbimeSideBar" class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white">
-          <a href="#" class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
-            <span class="fs-5 fw-semibold margin0auto sherbime-sidebar-title" style="text-transform: uppercase;">Shërbimet</span>
-          </a>
-          <div id="sherbimet" class="list-group list-group-flush border-bottom scrollarea">
-
-            <a href="./sherbimi1.html" target="television" class="list-group-item list-group-item-action py-3 lh-tight">
-              <div class="d-flex w-100 align-items-center justify-content-between">
-                <div class="mb-1 margin0auto sherbime-sidebar-links">Shërbime të Menaxhimit të Riskut dhe Pajtueshmërisë
-                </div>
-              </div>
-            </a>
-            <a href="./sherbimi2.html" target="television" class="list-group-item list-group-item-action py-3 lh-tight">
-              <div class="d-flex w-100 align-items-center justify-content-between">
-                <div class="mb-1 margin0auto sherbime-sidebar-links">Shërbime të Menaxhimit të Portofolit</div>
-              </div>
-            </a>
-            <a href="./sherbimi3.html" target="television" class="list-group-item list-group-item-action py-3 lh-tight">
-              <div class="d-flex w-100 align-items-center justify-content-between">
-                <div class="mb-1 margin0auto sherbime-sidebar-links">Shërbime Financiare</div>
-              </div>
-            </a>
-            <a href="./sherbimi4.html" target="television" class="list-group-item list-group-item-action py-3 lh-tight">
-              <div class="d-flex w-100 align-items-center justify-content-between">
-                <div class="mb-1 margin0auto sherbime-sidebar-links">Ndërjmetsim në Shitbljerje të Bizneseve</div>
-              </div>
-            </a>
-            <a href="./sherbimi5.html" target="television" class="list-group-item list-group-item-action py-3 lh-tight">
-              <div class="d-flex w-100 align-items-center justify-content-between">
-                <div class="mb-1 margin0auto sherbime-sidebar-links">Këshilla për Biznese</div>
-              </div>
-            </a>
-            <a href="./sherbimi6.html" target="television" class="list-group-item list-group-item-action py-3 lh-tight">
-              <div class="d-flex w-100 align-items-center justify-content-between">
-                <div class="mb-1 margin0auto sherbime-sidebar-links">Këshilla për Kredimarrje dhe Kredidhënje</div>
-              </div>
-            </a>
-            <i id="showSideBarBtn" class="fa-solid fa-circle-arrow-right"></i>
-          </div>
-        </div>
-      </div>
-      
-      <iframe id="television" class="television displayBlock" style="visibility: hidden;" name="television" src="./sherbimetinfo.html"></iframe>
-    </div>
-
+  <div id="logo-container">
+    <img id="main-logo" src="../../img/favicon1-removebg-preview.png" alt="Full Logo">
+    <img id="c1" class="c-part" src="../../img/favicon1-removebg-preview-modified.png" alt="C 1">
+    <img id="c2" class="c-part" src="../../img/favicon1-removebg-preview-modified(1).png" alt="C 2">
+    <img id="c3" class="c-part" src="../../img/favicon1-removebg-preview-modified(2).png" alt="C 3">
   </div>
 
+  <div id="main-content" style="display: none;">
 
-  <footer class="footer py-3 mt-4 zi-bg bardh-text">
-    <ul class="nav justify-content-center pb-3 zi-bg">
-      <li class="nav-item footer-links"><a href="../../index.html" class="nav-link px-2 bardh-text">Ballina</a></li>
-      <li class="nav-item footer-links"><a href="#" class="nav-link px-2 bardh-text">Shërbimet</a></li>
-      <li class="nav-item footer-links"><a href="../klientet.html" class="nav-link px-2 bardh-text">Klientët</a></li>
-      <li class="nav-item footer-links"><a href="../rreth-nesh.html" class="nav-link px-2 bardh-text">Rreth Nesh</a>
-      </li>
-    </ul>
-    <p class="border-top-gray" style="width: 80%; margin: 0 auto;"></p>
-    <p class="text-center mt-3 contact-info">info@creditconsultingcompany.org | +38344262114 <br> ©Credit Consulting
-      Company</p>
-  </footer>
+    <div class="content">
+
+      <nav class="navbar navbar-expand-sm navbar-light bg-light fill">
+        <div class="container-fluid">
+
+          <div class="logo-container d-sm-none w-100 h-1 text-center">
+            <a class="" href="../../index.html">
+              <img src="../../img/IMG-6cc3120f810483c22c94b400c51eb7fb-V-removebg-preview.png" alt="Logo"
+                style="height: 60px;">
+            </a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-items">
+                <a class="nav-link navbar-links" aria-current="page" href="../../index.html">Ballina</a>
+              </li>
+              <li class="nav-items">
+                <a class="nav-link active navbar-links active-navbar-link" href="#">Shërbimet</a>
+              </li>
+              <li class="nav-items">
+                <a href="../../index.html" class="d-none d-sm-block logo-link">
+                  <img src="../../img/IMG-6cc3120f810483c22c94b400c51eb7fb-V-removebg-preview.png" alt="Logo"
+                    style="height: 80px;">
+                </a>
+              </li>
+              <li class="nav-items ">
+                <a class="nav-link navbar-links" href="../klientet.html">Klientët</a>
+              </li>
+              <li class="nav-items">
+                <a class="nav-link navbar-links" href="../rreth-nesh.html">Rreth Nesh</a>
+              </li>
+              <li class="nav-items">
+                <a class="nav-link d-sm-none navbar-links" href="../services/services.html">EN</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a class="nav-translate d-none d-sm-block navbar-links" href="../services/services.html">EN</a>
+        <!-- Actual logo, absolutely positioned to be in the center -->
+
+      </nav>
+
+
+      <div class="containerFlex">
+        <div id="sherbimeContainer" class="moveLeft">
+          <div id="sherbimeSideBar" class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white">
+            <a href="#" class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
+              <span class="fs-5 fw-semibold margin0auto sherbime-sidebar-title" style="text-transform: uppercase;">Shërbimet</span>
+            </a>
+            <div id="sherbimet" class="list-group list-group-flush border-bottom scrollarea">
+
+              <a href="./sherbimi1.html" target="television" class="list-group-item list-group-item-action py-3 lh-tight side-list-group-item">
+                <div class="d-flex w-100 align-items-center justify-content-between">
+                  <div class="mb-1 sherbime-sidebar-links">Shërbime të Menaxhimit të Riskut dhe Pajtueshmërisë
+                  </div>
+                </div>
+              </a>
+              <a href="./sherbimi2.html" target="television" class="list-group-item list-group-item-action py-3 lh-tight side-list-group-item">
+                <div class="d-flex w-100 align-items-center justify-content-between">
+                  <div class="mb-1 sherbime-sidebar-links">Shërbime të Menaxhimit të Portofolit</div>
+                </div>
+              </a>
+              <a href="./sherbimi3.html" target="television" class="list-group-item list-group-item-action py-3 lh-tight side-list-group-item">
+                <div class="d-flex w-100 align-items-center justify-content-between">
+                  <div class="mb-1 sherbime-sidebar-links">Shërbime Financiare</div>
+                </div>
+              </a>
+              <a href="./sherbimi4.html" target="television" class="list-group-item list-group-item-action py-3 lh-tight side-list-group-item">
+                <div class="d-flex w-100 align-items-center justify-content-between">
+                  <div class="mb-1 sherbime-sidebar-links">Ndërjmetsim në Shitbljerje të Bizneseve</div>
+                </div>
+              </a>
+              <a href="./sherbimi5.html" target="television" class="list-group-item list-group-item-action py-3 lh-tight side-list-group-item">
+                <div class="d-flex w-100 align-items-center justify-content-between">
+                  <div class="mb-1 sherbime-sidebar-links">Këshilla për Biznese</div>
+                </div>
+              </a>
+              <a href="./sherbimi6.html" target="television" class="list-group-item list-group-item-action py-3 lh-tight side-list-group-item">
+                <div class="d-flex w-100 align-items-center justify-content-between">
+                  <div class="mb-1 sherbime-sidebar-links">Këshilla për Kredimarrje dhe Kredidhënje</div>
+                </div>
+              </a>
+              <i id="showSideBarBtn" class="fa-solid fa-circle-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+        
+        <iframe id="television" class="television displayBlock" style="visibility: hidden;" name="television" src="./sherbimetinfo.html"></iframe>
+      </div>
+
+    </div>
+
+
+    <footer class="footer py-3 mt-4 zi-bg bardh-text">
+      <ul class="nav justify-content-center pb-3 zi-bg">
+        <li class="nav-item footer-links"><a href="../../index.html" class="nav-link px-2 bardh-text">Ballina</a></li>
+        <li class="nav-item footer-links"><a href="#" class="nav-link px-2 bardh-text">Shërbimet</a></li>
+        <li class="nav-item footer-links"><a href="../klientet.html" class="nav-link px-2 bardh-text">Klientët</a></li>
+        <li class="nav-item footer-links"><a href="../rreth-nesh.html" class="nav-link px-2 bardh-text">Rreth Nesh</a>
+        </li>
+      </ul>
+      <p class="border-top-gray" style="width: 80%; margin: 0 auto;"></p>
+      <p class="text-center mt-3 contact-info">info@creditconsultingcompany.com | +38344262114 <br> ©Credit Consulting
+        Company</p>
+    </footer>
+  </div>
+  <script src="../../script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>

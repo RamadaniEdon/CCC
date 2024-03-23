@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
   --ebardha: #f1e8e3;
   /* Define your custom color */
   --ezeza: #010216;
   --ekalterta: #3360f1;
   --everdha: #fcff74;
+
+  /* ngjyrat e logos */
+  --logoQelt: #05B0DA;
+  --logoMshelt: #073D6C;
+  --logoMesme: #038BBB;
+  --logoTjeter: #048BBB;
 }
 
 .zi-text {
@@ -63,6 +71,9 @@ body {
   min-height: 100vh;
   background-color: var(--ebardha);
   font-family: 'Arial', sans-serif;
+  font-family: "Kanit", 'Arial', sans-serif !important;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .content {
@@ -94,7 +105,7 @@ body {
 .navbar {
   display: flex;
   align-items: center;
-  box-shadow: 0px 5px 0px #dedede;
+  /* box-shadow: 0px 5px 0px #dedede; */
   z-index: 11;
 }
 
@@ -172,11 +183,10 @@ nav.fill ul li a:after {
 }
 
 nav.fill ul li a:not(.logo-link):hover {
-  color: #fff;
   z-index: 1;
 }
 
-nav.fill ul li a:not(.logo-link):hover:after {
+nav.fill ul li a:not(.logo-link, .active-navbar-link):hover:after {
   z-index: -10;
   animation: fill 1s forwards;
   -webkit-animation: fill 1s forwards;
@@ -198,9 +208,14 @@ nav.fill ul li a:not(.logo-link):hover:after {
 
   100% {
     width: 100%;
-    height: 100%;
-    background: #333;
+    height: 1px;
+    background: var(--logoQelt);
   }
+}
+
+.about-us-img {
+  width: 50%;
+  margin-left: 25%;
 }
 
 @media (min-width: 992px) {
@@ -211,6 +226,7 @@ nav.fill ul li a:not(.logo-link):hover:after {
   .nav-link {
     font-size: larger;
   }
+
   .nav-translate {
     font-size: larger;
   }
@@ -224,8 +240,14 @@ nav.fill ul li a:not(.logo-link):hover:after {
   .nav-link {
     font-size: medium;
   }
+
   .nav-translate {
     font-size: medium;
+  }
+
+  .about-us-img {
+    width: 75%;
+    margin-left: 12.5%;
   }
 }
 
@@ -245,6 +267,11 @@ nav.fill ul li a:not(.logo-link):hover:after {
 
   .nav-translate {
     font-size: small;
+  }
+
+  .about-us-img {
+    margin-left: 0%;
+    width: 100%;
   }
 }
 
@@ -363,7 +390,8 @@ nav.fill ul li a:not(.logo-link):hover:after {
 }
 
 .sherbime-sidebar-links {
-  text-align: center;
+  text-align: left;
+  align-items: left !important;
   text-transform: uppercase;
 }
 
@@ -546,13 +574,7 @@ iframe {
     min-height: 30rem;
     width: 100%;
   }
-  @-webkit-keyframes fill {
-    100% {
-      width: 100%;
-      height: 1px;
-      background: #333;
-    }
-  }
+
   .sherbime-sidebar-links {
     font-size: 0.8rem;
   }
@@ -561,6 +583,7 @@ iframe {
     font-size: 1.1rem !important;
   }
 }
+
 .loan-container {
   background-color: #ffffff;
   padding: 20px;
@@ -602,12 +625,18 @@ h2 {
 
 @media (max-width: 768px) {
   .order-md-1 {
+    margin-top: 50px;
     order: 2;
   }
 
   .order-md-2 {
     order: 1;
     margin-top: 20px;
+  }
+
+  .text-page {
+    margin: 10px 25px !important;
+    padding: 5px 15px !important;
   }
 }
 
@@ -684,8 +713,8 @@ h2 {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   margin-top: -100px;
   margin-left: -100px;
   background-size: contain;
@@ -735,13 +764,15 @@ h2 {
 
 body {
   margin: 0;
-  background-color: rgb(248, 248, 248);
+  background-color: rgb(248, 248, 248) !important;
 }
 
 #main-content {
+  min-height: 100vh;
   display: none;
   opacity: 0;
   transition: opacity 1s ease-in-out;
+  background-color: var(--logoMesme);
 }
 
 .text-page {
@@ -749,7 +780,7 @@ body {
   padding: 10px 30px;
   flex-grow: 1;
   min-height: 60vh;
-  background-color: white;
+  background-color: rgb(248, 248, 248);
 }
 
 .text-page-text {
@@ -760,4 +791,494 @@ body {
 .text-page-text p {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+
+.side-list-group-item {
+  transition: background-color 0.3s ease;
+}
+
+#index-start {
+  position: relative;
+  background-color: white;
+  width: 100%;
+  height: 90vh;
+  max-height: 800px;
+  z-index: 1;
+}
+
+#index-image-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./img/indexPhoto1.png');
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: 140% bottom;
+  transition: background-image 0.5s ease-in-out;
+  z-index: 2;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#index-start-text {
+  position: absolute;
+  padding-left: 6rem;
+  padding-top: 2rem;
+  z-index: 10000;
+
+}
+
+#index-start-title {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  /* width: 60%; */
+  color: var(--logoQelt);
+  z-index: 10;
+
+}
+
+#index-start-title span {
+  display: block;
+}
+
+#index-start-paragraph {
+  margin-top: 15px;
+  width: 40%;
+  color: var(--logoMshelt);
+}
+
+.index-start-button {
+  margin-top: 20px;
+  padding: 10px 30px;
+}
+
+#index-photo-mobile-container {
+  background-color: white;
+}
+
+#index-photo-mobile {
+  /* display: none; */
+  /* background-color: white; */
+  width: 100%;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#index-photo-mobile-container {
+  display: none;
+}
+
+
+
+
+.feature {
+  background-color: var(--logoMshelt); /* Bootstrap primary color, adjust as needed */
+  color: white;
+  padding: 100px 0;
+}
+
+.icon-feature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Bootstrap secondary color, adjust as needed */
+  margin: 0 auto 20px;
+}
+
+.feature-text {
+  text-align: center;
+}
+
+.description {
+  margin: 0;
+  line-height: 1.6; /* Adjust line height for better readability */
+}
+
+/* Hide <br> tags on small screens */
+.description br {
+  display: none;
+}
+
+/* Show <br> tags on screens larger than 576px */
+@media (min-width: 576px) {
+  .description br {
+    display: inline;
+  }
+}
+
+
+@media (max-width: 1106px) {
+  #index-start-title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #index-start-title {
+    font-size: 3rem;
+  }
+
+  #index-start-paragraph {
+    font-size: 0.8rem;
+  }
+
+  .index-start-button {
+    font-size: 0.8rem;
+  }
+
+  #index-start {
+    max-height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  #index-start {
+    max-height: 430px;
+  }
+
+  #index-image-div {
+    background-position: 150% bottom;
+  }
+}
+
+@media (max-width: 660px) {
+  #index-start-title {
+    font-size: 2.6rem;
+
+  }
+  #index-image-div {
+    display: none;
+  }
+  #index-photo-mobile-container {
+    display: block;
+  }
+  #index-start-paragraph {
+    width: 70%;
+  }
+  #index-start-title span {
+    display: inline;
+  }
+  #index-start-text {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  #index-start {
+    height: fit-content;
+    padding-bottom: 2rem;
+  }
+
+  #index-start-text {
+    position: relative;
+  }
+}
+
+@media (max-width: 410px) {
+  #index-start-title {
+    font-size: 2.4rem;
+
+  }
+  #index-image-div {
+    display: none;
+  }
+  #index-start-paragraph {
+    width: 90%;
+  }
+  #index-start-title span {
+    display: inline;
+  }
+  #index-start-text {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media (min-width: 1460px) {
+  #index-start-title {
+    font-size: 4.5rem;
+  }
+
+  #index-start-paragraph {
+    font-size: 1.2rem;
+  }
+
+  .index-start-button {
+    font-size: 1.2rem;
+  }
+}
+
+
+
+
+
+
+
+
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////COLORS OF THE PAGE//////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+
+
+/* ////////////////ALL PAGES/////////////// */
+/* ////////////////BODY////////////// */
+/* animation background */
+body {
+  background-color: rgba(255, 255, 255, 0.934) !important;
+}
+
+/* ////////////////NAVBAR//////////////// */
+/* navbar bg*/
+.navbar {
+  /* background-color: yellow !important; */
+}
+
+/* navbar links color */
+.navbar-links {
+  color: var(--logoMshelt) !important;
+  /* background-color: #ccc */
+}
+
+.navbar-links:hover {
+  color: var(--logoMesme) !important;
+  transition: 0s;
+}
+
+.navbar-links:hover::after {
+  transition: 0s;
+}
+
+/* active navbar link color */
+.active-navbar-link {
+  color: var(--logoMesme) !important;
+  border-bottom: 1px solid var(--logoMesme);
+  /* width: 100%;
+  height: 1px;
+  background: var(--logoQelt); */
+}
+
+/* ////////////FOOTER//////////// */
+/* Footer bg and link colors */
+.footer,
+.footer ul,
+.footer ul li a {
+  /* background-color: var(--logoMshelt); */
+  /* color: white; */
+}
+
+/* footer contact info color */
+.footer p {
+  /* color: white; */
+}
+
+/* footer border color */
+.border-top-gray {
+  /* border-color: rgb(25, 3, 7); */
+}
+
+/* footer links hover colors */
+.footer ul li a:hover {
+  color: var(--logoMesme) !important;
+}
+
+/* /////////////////////INDEX///////////////// */
+/* /////////////////////INDEX CONTENT//////////////// */
+/* index background */
+#main-content {
+  background-color: var(--logoMesme);
+}
+
+/* ////////////////CALCULATOR/////////////// */
+/* calculator bg */
+.calculator {
+  /* background-color: yellow; */
+  color: var(--logoMshelt) !important;
+  margin-bottom: 3rem;
+}
+
+/* calculator label colors */
+.form-control>label {
+  /* background-color: black; */
+  /* color: var(--ebardha) !important; */
+}
+
+/* input placeholder color */
+.form-control::placeholder {
+  /* color: red; */
+}
+
+/* input placeholder when focused */
+.form-control:focus::placeholder {
+  /* color: yellow; */
+}
+
+/* input colors when focused */
+.form-control:focus {
+  /* color: white; */
+  /* background-color: blue; */
+}
+
+/* calculator button colors and hover */
+.calculator-button {
+  background-color: var(--logoQelt);
+  /* color: yellow; */
+  border-color: var(--logoQelt);
+}
+
+.calculator-button:hover {
+  background-color: var(--logoMshelt);
+  /* color: red; */
+  border-color: var(--logoMshelt);
+}
+
+/* Loan Summary Title color  */
+#scroll-here>h2:first-of-type {
+  color: var(--logoQelt);
+}
+
+/* Results dynamic color around the results
+change the javascript as well
+add bg-light class again to it if you dont want to change it */
+#results {
+  /* background-color: yellow; */
+}
+
+/* Calculator results colors */
+.calculator-results li {
+  /* background-color: yellow; */
+  color: var(--logoMshelt);
+}
+
+/* /////////////SHERBIMET//////////////// */
+/* /////////////SIDEBAR//////////////// */
+/* Side bar title colors */
+#sherbimeSideBar>a {
+  /* background-color: yellow; */
+  color: var(--logoMshelt) !important;
+}
+
+/* sidebar bg color, only in telephone mode */
+#sherbimeSideBar {
+  /* background-color: orangered !important; */
+}
+
+/* Sidebar border */
+#sherbimeContainer,
+#sherbimet a,
+#sherbimet,
+.scrollarea,
+#sherbimeSideBar>a {
+  /* border-color: rgb(103, 21, 21) !important; */
+  /* border-bottom-color: rgb(103, 21, 21) !important; */
+}
+
+/* Sidebar links colors and hover and clicked colors 
+NOTE: better to make color of hover same with color of clicked*/
+#sherbimet a {
+  /* background-color: #fff; */
+  color: var(--logoMshelt);
+}
+
+#sherbimet a:hover {
+  background-color: var(--logoMesme);
+}
+
+.side-list-group-item:hover .sherbime-sidebar-links {
+  color: #ffffff;
+}
+
+.clicked {
+  background-color: var(--logoMesme) !important;
+  color: #fff !important;
+}
+
+/* ////////////////////IFRAME/////////////// */
+/* iframe bg color
+only visible a little while loading */
+#television {
+  /* background-color: yellow; */
+}
+
+/* iframe border color */
+#television {
+  /* border-color: rgb(188, 33, 95); */
+}
+
+/* ////////////////////SHERBIM INDIVID AND SHERBIM INFO///////////////// */
+/* sherbim body bg */
+.body-sherbimet {
+  /* background-color: #fefefe !important; */
+}
+
+/* sherbim title color */
+.title-sherbim {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--logoMesme) !important;
+}
+
+/* sherbim container of text and border */
+.body-sherbimet>div {
+  /* background-color: rgb(131, 131, 67) !important; */
+  /* border-color: var(--logoMshelt) !important; */
+}
+
+/* sherbim text color */
+.body-sherbimet>div>div p,
+.body-sherbimet>div>div li {
+  color: var(--logoMshelt) !important;
+}
+
+/* sherbim title border bottom color */
+.border-sherbim-title {
+  border-color: var(--logoMshelt) !important;
+}
+
+/* //////////////////RRETH NESH//////////////*/
+/* title color and border color */
+.text-page {
+  /* background-color: orange; */
+  /* border-color: rgb(128, 4, 4) !important; */
+}
+
+/* border of title */
+.text-page>p {
+  width: 70%;
+  font-weight: 500;
+  border-color: var(--logoMshelt) !important;
+}
+
+/* text color */
+.text-page-text {
+  margin: 0 auto;
+  width: 80%;
+  color: var(--logoMshelt);
+}
+
+/* //////////////////CLIENTS//////////////*/
+/* background of the rotated box */
+.clients-div>.box>.body>.content {
+  background-color: var(--logoMshelt);
+}
+
+/* background of rotated content */
+.clients-div>.box>.body>.content>div {
+  background-color: #fff;
+}
+
+/* color of content */
+.clients-div>.box>.body>.content>div>p {
+  color: var(--logoMshelt) !important;
 }

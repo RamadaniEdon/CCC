@@ -23,12 +23,21 @@
 
 <body>
 
+  <div id="logo-container">
+    <img id="main-logo" src="../img/favicon1-removebg-preview.png" alt="Full Logo">
+    <img id="c1" class="c-part" src="../img/favicon1-removebg-preview-modified.png" alt="C 1">
+    <img id="c2" class="c-part" src="../img/favicon1-removebg-preview-modified(1).png" alt="C 2">
+    <img id="c3" class="c-part" src="../img/favicon1-removebg-preview-modified(2).png" alt="C 3">
+  </div>
+
+  <div id="main-content" style="display: none;">
+
   <div class="content">
     <nav class="navbar navbar-expand-sm navbar-light bg-light fill">
       <div class="container-fluid">
 
         <div class="logo-container d-sm-none w-100 h-1 text-center">
-          <a class="" href="#">
+          <a class="" href="../home.html">
             <img src="../img/IMG-6cc3120f810483c22c94b400c51eb7fb-V-removebg-preview.png" alt="Logo"
               style="height: 60px;">
           </a>
@@ -43,10 +52,10 @@
         <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-items">
-              <a class="nav-link" aria-current="page" href="../home.html">Home</a>
+              <a class="nav-link navbar-links" aria-current="page" href="../home.html">Home</a>
             </li>
             <li class="nav-items">
-              <a class="nav-link" href="./services/services.html">Services</a>
+              <a class="nav-link navbar-links" href="./services/services.html">Services</a>
             </li>
             <li class="nav-items">
               <a href="../index.html" class="d-none d-sm-block logo-link">
@@ -55,23 +64,23 @@
               </a>
             </li>
             <li class="nav-items ">
-              <a class="nav-link active" href="#">Clients</a>
+              <a class="nav-link active navbar-links active-navbar-link" href="#">Clients</a>
             </li>
             <li class="nav-items">
-              <a class="nav-link" href="./about-us.html">About Us</a>
+              <a class="nav-link navbar-links" href="./about-us.html">About Us</a>
             </li>
             <li class="nav-items">
-              <a class="nav-link d-sm-none" href="./klientet.html">AL</a>
+              <a class="nav-link d-sm-none navbar-links" href="./klientet.html">AL</a>
             </li>
           </ul>
         </div>
       </div>
-      <a class="nav-translate d-none d-sm-block" href="./klientet.html">AL</a>
+      <a class="nav-translate d-none d-sm-block navbar-links" href="./klientet.html">AL</a>
       <!-- Actual logo, absolutely positioned to be in the center -->
 
     </nav>
 
-    <div class="container d-flex align-items-center justify-content-center flex-wrap">
+    <div class="container d-flex align-items-center justify-content-center flex-wrap clients-div">
       <div class="box">
         <div class="body">
           <div class="imgContainer">
@@ -79,10 +88,8 @@
           </div>
           <div class="content d-flex flex-column align-items-center justify-content-center">
             <div>
-              <h3 class="text-white fs-5">Post Title</h3>
-              <p class="fs-6 text-white">IMF KosInvest është institucion mikrofinanciar i licencuar nga Banka Qendrore e
-                Republikës së Kosovës dhe që operon brenda rrjetit të udhëhequr nga VisionFund International, një
-                plotësues mikrofinanciar i World Vision International.</p>
+              <p class="fs-6 text-white">KosInvest MFI is a microfinancial institution that operates within the managed network
+                by VisionFund International.</p>
             </div>
           </div>
         </div>
@@ -94,10 +101,8 @@
           </div>
           <div class="content d-flex flex-column align-items-center justify-content-center">
             <div>
-              <h3 class="text-white fs-5">Post Title</h3>
-              <p class="fs-6 text-white">Crimson Finance Fund bën zhvillimin e partnerëve të saj prodhues, shpërndarës,
-                apo ofrues shërbimesh mikronjësi, ndërmarrje të vogla dhe të mesme, duke u siguruar atyre një gamë
-                inovative produktesh dhe shërbimesh të përshtatura sipas nevojave të tyre.</p>
+              <p class="fs-6 text-white">Crimson Finance Fund develops its partners by providing them with products
+                and services according to their needs.</p>
             </div>
           </div>
         </div>
@@ -109,7 +114,6 @@
           </div>
           <div class="content d-flex flex-column align-items-center justify-content-center">
             <div>
-              <h3 class="text-white fs-5">Post Title</h3>
               <p class="fs-6 text-white">IBAS has many trailblazing innovations for payment transfers, money transfers,
                 and credit services.</p>
             </div>
@@ -129,10 +133,12 @@
       <li class="nav-item footer-links"><a href="./about-us.html" class="nav-link px-2 bardh-text">About Us</a></li>
     </ul>
     <p class="border-top-gray" style="width: 80%; margin: 0 auto;"></p>
-    <p class="text-center mt-3 contact-info">info@crediccardcompany.com | +38344262114 <br> ©Credit Consulting Company
+    <p class="text-center mt-3 contact-info">info@creditconsultingcompany.com | +38344262114 <br> ©Credit Consulting Company
     </p>
   </footer>
+  </div>
 
+  <script src="../script.js"></script>
   <script src="../scripts/klientet.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

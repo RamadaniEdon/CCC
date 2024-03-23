@@ -110,6 +110,22 @@ window.onload = function () {
       }
     }
   });
+
+
+  const links = document.querySelectorAll('.side-list-group-item');
+
+  // Add click event listener to each link
+  links.forEach(link => {
+    link.addEventListener('click', function() {
+      // Remove 'clicked' class from all links
+      links.forEach(link => {
+        link.classList.remove('clicked');
+      });
+      
+      // Add 'clicked' class to the clicked link
+      this.classList.add('clicked');
+    });
+  });
 }
 
 
