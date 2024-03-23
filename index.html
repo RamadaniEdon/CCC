@@ -140,43 +140,43 @@
             <!-- Loan Calculator Form -->
             <form id="loan-form">
               <div class="form-group">
-                <label for="amount">Loan amount</label>
-                <input type="number" class="form-control" id="amount" placeholder="Enter amount">
+                <label for="amount">Shuma e kredisë</label>
+                <input type="number" class="form-control" id="amount" placeholder="Shëno shumën">
               </div>
               <div class="form-group">
-                <label for="years">Loan term in years</label>
-                <input type="number" class="form-control" id="years" placeholder="Enter years" oninput="updateMonths()">
+                <label for="years">Afati i kredisë në vite</label>
+                <input type="number" class="form-control" id="years" placeholder="Shëno vitet" oninput="updateMonths()">
               </div>
               <div class="form-group">
-                <label for="months">Loan term in months</label>
-                <input type="number" class="form-control" id="months" placeholder="Enter months"
+                <label for="months">Afati i kredisë në muaj</label>
+                <input type="number" class="form-control" id="months" placeholder="Shëno muajt"
                   oninput="updateYears()">
               </div>
               <div class="form-group">
-                <label for="rate">Interest rate per year (%)</label>
-                <input type="number" class="form-control" id="rate" step="0.1" placeholder="Enter interest rate">
+                <label for="rate">Interesi vjetor (%)</label>
+                <input type="number" class="form-control" id="rate" step="0.1" placeholder="Shëno interesin">
               </div>
               <div class="form-group d-flex justify-content-center">
                 <button type="button" class="btn btn-primary calculator-button"
-                  onclick="calculateLoan()">Calculate</button>
+                  onclick="calculateLoan()">Kalkulo</button>
               </div>
             </form>
           </div>
           <div class="col-md-6 order-md-2" id="scroll-here">
             <!-- Results -->
-            <h2>Loan Summary</h2>
+            <h2>Raporti Per Kredi</h2>
             <div id="results" class="p-3 border">
               <ul class="list-group calculator-results">
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                  Monthly Payment:
+                  Pagesa Mujore:
                   <span id="monthly-payment">$0</span>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                  Total Payment:
+                  Pagesa Totale:
                   <span id="total-payment">$0</span>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                  Total Interest:
+                  Interesi Total:
                   <span id="total-interest">$0</span>
                 </li>
               </ul>
